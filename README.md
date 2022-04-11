@@ -1,6 +1,6 @@
 # SpringBoot Study
 
-记录 springboot 的学习历程与笔记整理
+记录 SSM 框架的 学习历程与笔记整理
 
 ## index
 
