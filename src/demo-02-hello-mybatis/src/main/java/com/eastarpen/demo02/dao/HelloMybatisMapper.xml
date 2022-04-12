@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.eastarpen.demo02.dao.HelloMybatisMapper">
+
+    <insert id="addBook" parameterType="com.eastarpen.demo02.entity.Book" >
+        INSERT book(`bookName`, `author`, `inventory`, `description`)
+        VALUES (#{bookName}, #{author}, #{inventory}, #{description})
+    </insert>
+
+    <delete id="deleteBookById" >
+        DELETE FROM book WHERE id = #{id};
+    </delete>
+
+    <update id="updateBookById" parameterType="com.eastarpen.demo02.entity.Book">
+        UPDATE  book SET
+        `bookName` = #{bookName},
+        `author` = #{author},
+        `inventory` = #{inventory},
+        `description` = #{description}
+        WHERE id=#{id};
+    </update>
+
+    <select id="queryBookById" resultType="com.eastarpen.demo02.entity.Book" >
+        SELECT * FROM book WHERE id = #{id};
+    </select>
+</mapper>
