@@ -90,3 +90,30 @@ db.driver="driver"
 测试类, 测试 CURD 方法
 
 注意增删改需要提交事务
+
+**源码结构**
+
+```
+.
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── eastarpen
+│   │           └── demo02
+│   │               ├── dao
+│   │               │   ├── HelloMybatisMapper.java
+│   │               │   └── HelloMybatisMapper.xml
+│   │               ├── entity
+│   │               │   └── Book.java
+│   │               └── utils
+│   │                   └── MybatisUtil.java
+│   └── resources
+│       └── mybatis-config.xml
+└── test
+    └── java
+        └── com
+            └── eastarpen
+                └── demo02
+                    └── dao
+                        └── HelloMybatisMapperTest.java
+```
