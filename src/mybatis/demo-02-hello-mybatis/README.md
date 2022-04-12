@@ -117,3 +117,8 @@ db.driver="driver"
                     └── dao
                         └── HelloMybatisMapperTest.java
 ```
+
+### 建议阅读
+
+* [Mybatis 入门](https://mybatis.org/mybatis-3/zh/getting-started.html)
+* [【MyBatis】配置文件详解（万字长文）](https://juejin.cn/post/6970982208358055950)
