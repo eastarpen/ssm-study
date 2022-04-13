@@ -33,5 +33,6 @@ build/
 .vscode/
 
 ### personnal data ###
-/data/
+data/
 *.properties
+!template/
