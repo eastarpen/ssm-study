@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--  mybatis 配置可在 spring-dao 完成, mybats-config 是非必要的 -->
+
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.eastarpen.entity"/>
+    </typeAliases>
+
+    <!-- mapper -->
+    <mappers>
+        <mapper class="com.eastarpen.mapper.BookManagerMapper" />
+    </mappers>
+
+</configuration>
+
