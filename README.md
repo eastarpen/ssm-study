@@ -12,7 +12,6 @@
 
 ### SpringMVC
 
-
 | name                                                         | description       |
 | ------------------------------------------------------------ | ----------------- |
 | [demo-04-hello-springmvc](https://github.com/eastarpen/springboot-study/tree/master/src/springmvc/demo-04-hello-springmvc) | springmvc 初认知 |
@@ -27,7 +26,7 @@
 
 | name                                                         | description       |
 | ------------------------------------------------------------ | ----------------- |
-| [demo-01-hello-mybatis](https://github.com/eastarpen/springboot-study/tree/master/src/mybatis/demo-02-hello-mybatis) | mybatis 初步使用 |
+| [demo-02-hello-mybatis](https://github.com/eastarpen/springboot-study/tree/master/src/mybatis/demo-02-hello-mybatis) | mybatis 初步使用 |
 
 
 ## Log
