@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:component-scan base-package="com.eastarpen.demo04.dao" />
+
+    <bean id="userDao" class="com.eastarpen.demo04.dao.UserDaoImpl">
+        <property name="userList">
+           <list>
+               <ref bean="Eastarpen" />
+               <ref bean="Jack" />
+               <ref bean="Tom" />
+           </list>
+        </property>
+    </bean>
+
+    <bean id="Eastarpen" class="com.eastarpen.demo04.entity.User">
+        <property name="id" value="1"></property>
+        <property name="name" value="Eastarpen"></property>
+    </bean>
+    <bean id="Jack" class="com.eastarpen.demo04.entity.User">
+        <property name="id" value="2"></property>
+        <property name="name" value="Jack"></property>
+    </bean>
+    <bean id="Tom" class="com.eastarpen.demo04.entity.User">
+        <property name="id" value="3"></property>
+        <property name="name" value="Tom"></property>
+    </bean>
+
+</beans>
