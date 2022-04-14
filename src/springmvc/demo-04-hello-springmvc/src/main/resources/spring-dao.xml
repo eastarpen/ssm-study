@@ -5,7 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <context:component-scan base-package="com.eastarpen.demo04.dao" />
+    <!--    dao 层管理, 这里主要是创建 userDao bean, 并注入值-->
+
 
     <bean id="userDao" class="com.eastarpen.demo04.dao.UserDaoImpl">
         <property name="userList">

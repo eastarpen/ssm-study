@@ -10,10 +10,15 @@
        http://www.springframework.org/schema/mvc
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--    扫描 controller 自动装配 -->
     <context:component-scan base-package="com.eastarpen.demo04.controller"/>
+
+    <!-- 默认servlet处理器 用以过滤静态资源 -->
     <mvc:default-servlet-handler />
+    <!-- 注解驱动 -->
     <mvc:annotation-driven />
 
+    <!-- 视图解析器, 本项目没有用到, 主要是用来辅助视图跳转 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="internalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/" />

@@ -8,6 +8,7 @@ public class UserDaoImpl implements UserDao {
 
     /**
      * 模拟数据库
+     * 这里采用手动装配, 将 userList 赋初始值
      */
     private List<User> userList;
 

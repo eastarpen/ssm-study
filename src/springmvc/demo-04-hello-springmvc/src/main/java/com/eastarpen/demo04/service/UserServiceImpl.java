@@ -5,6 +5,10 @@ import com.eastarpen.demo04.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 采用自动装配
+ * 在 spring-service.xml 中已配置自动扫描
+ */
 @Service
 public class UserServiceImpl implements UserService{
 
