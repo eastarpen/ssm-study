@@ -12,6 +12,11 @@
 
 ### SpringMVC
 
+
+| name                                                         | description       |
+| ------------------------------------------------------------ | ----------------- |
+| [demo-04-hello-springmvc](https://github.com/eastarpen/springboot-study/tree/master/src/springmvc/demo-04-hello-springmvc) | springmvc 初认知 |
+
 ### SpringBoot
 
 | name                                                         | description       |
@@ -30,3 +35,4 @@
 * 2022-04-11 创建项目, 完成 `demo-01-hello-springboot`
 * 2022-04-12 完成 `demo-02-hello-mybatis`
 * 2022-04-13 完成 `demo-03-hello-spring`
+* 2022-04-14 完成 `demo-04-hello-springmvc`
