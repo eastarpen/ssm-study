@@ -2,7 +2,6 @@
 
 本项目是 [fuzhengwei/small-spring](https://github.com/fuzhengwei/small-spring) 的学习实现
 
-k
 通过学习手写简化版的 spring 框架, 了解 spring 核心原理
 
 ### log
