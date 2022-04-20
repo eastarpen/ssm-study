@@ -9,7 +9,7 @@
 | name                                                         | description       | status     |
 | ------------------------------------------------------------ | ----------------- | ---------- |
 | [demo-03-hello-spring](https://github.com/eastarpen/springboot-study/tree/master/src/spring/demo-03-hello-spring) | spring 初认知 | done    |
-| [demo-05-small-spring](https://github.com/eastarpen/springboot-study/tree/master/src/spring/demo-05-small-spring) | 手写简化版 spring, 了解spring 核心原理| done    |
+| [demo-05-small-spring](https://github.com/eastarpen/springboot-study/tree/master/src/spring/demo-05-small-spring) | 手写简化版 spring, 了解spring 核心原理| not done    |
 
 ### SpringMVC
 
