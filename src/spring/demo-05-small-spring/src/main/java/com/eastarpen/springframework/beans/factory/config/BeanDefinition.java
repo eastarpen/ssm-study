@@ -1,6 +1,7 @@
-package com.eastarpen.springframework.beans.factory.factory;
+package com.eastarpen.springframework.beans.factory.config;
 
 
+@SuppressWarnings({"rawtypes"})
 public class BeanDefinition {
 
     private Class beanClass;

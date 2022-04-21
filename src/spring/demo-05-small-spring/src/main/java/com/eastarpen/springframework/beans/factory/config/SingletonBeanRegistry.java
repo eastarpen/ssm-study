@@ -1,4 +1,6 @@
-package com.eastarpen.springframework.beans.factory.factory;
+package com.eastarpen.springframework.beans.factory.config;
 
-public class SingletonBeanRegistry {
+public interface SingletonBeanRegistry {
+
+    public Object getSingleton(String beanName);
 }
