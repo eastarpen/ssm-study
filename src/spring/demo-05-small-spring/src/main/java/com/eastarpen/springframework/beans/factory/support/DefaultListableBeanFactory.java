@@ -8,6 +8,9 @@ import java.util.Map;
 
 public class DefaultListableBeanFactory extends AbstractAutowiredCapableBeanFactory implements BeanDefinitionRegistry {
 
+    /**
+     * bean 注册表
+     */
     public final Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override

@@ -14,6 +14,11 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
         return singletonObjects.get(beanName);
     }
 
+    /**
+     * 将 bean 实例对象存入容器
+     * @param beanName
+     * @param singletonObject
+     */
     public void addSingleton(String beanName, Object singletonObject) {
         singletonObjects.put(beanName, singletonObject);
     }
