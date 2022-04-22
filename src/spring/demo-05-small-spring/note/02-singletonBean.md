@@ -1,4 +1,10 @@
+## SingletonBean
+
+使用工厂模式和单例模式创建bean
+
 ### code
+
+代码详细解释见注释
 
 **当前项目结构**
 
@@ -39,11 +45,28 @@ src
 
 * 继承/实现 关系
 
-  ![]()
+  ![UML-01](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-01.png)
 
 * 调用关系
+
+  ![UML-02](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-02.png)
+
+**Key**
+
+* `DefaultListableBeanFactory` 实例化的时候含有两个 `HashMap`
   
-  ![]()
+  `beanDefinitionMap` 在 `DefaultListableBeanFactory` 定义, 用以存放 bean 的注册信息
+
+  `singletonObjects` 由 `DefaultSingletonBeanRegistry` 定义, 用以存放 单例bean 的实例
+
+* `registerBeanDefinition` 将 bean 信息存入 注册表, 被为实例化 bean
+
+* 第一次 `getBean` 由于容器中没有 bean 的实例, 创建实例且将其加入容器后返回容器实例
+
+  第二次由于容器中已经存在了 bean 实例, 直接将其返回
+
+  `getBean` 详见 `AbstractBeanFactory`
+  
 
 ### `@SuppressWarnings({"rawtypes})`
 
