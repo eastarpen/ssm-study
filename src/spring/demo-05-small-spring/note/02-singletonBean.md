@@ -68,6 +68,8 @@ src
   `getBean` 详见 `AbstractBeanFactory`
   
 
+TODO 各个类的具体职责
+
 ### `@SuppressWarnings({"rawtypes})`
 
 `@SuppressWarnings` 使编译器编译时不输出某些警告
@@ -85,3 +87,9 @@ List、Set、Map是Java中的原始数据类型，Java 5出现泛型，现已不
 * singleton 单例
 * autowire  自动装配
 * suppress  抑制, 镇压
+
+### log
+
+* 2022-04-21 完成 [《Spring 手撸专栏》第 3 章：初显身手，运用设计模式，实现 Bean 的定义、注册、获取](https://mp.weixin.qq.com/s/CgvQzm8B-CvQvXdxONC-lA) 的复现
+* 2022-04-22 完成 `02-singletonBean.md` 的编写, uml图绘制 和代码注释 
+* 2022-04-23 优化注解
