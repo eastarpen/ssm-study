@@ -2,6 +2,8 @@
 
 使用工厂模式和单例模式创建bean
 
+tip: 代码和 `01-start` 几乎没有连系
+
 ### code
 
 代码详细解释见注释
@@ -68,7 +70,15 @@ src
   `getBean` 详见 `AbstractBeanFactory`
   
 
-TODO 各个类的具体职责
+### 类设计思路
+
+**目标**
+
+设计一个容器, 方便存取(管理) java 对象
+
+**分析**
+
+1. java 实例化对象需要存放
 
 ### `@SuppressWarnings({"rawtypes})`
 
