@@ -8,8 +8,8 @@
 
 | note                                                         | code                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [01-start](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/01-start.md) | [01-start-code](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/code/01-start.zip) |
-| [02-singletonBean](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/02-singletonBean.md) | [02-singletonBean-code](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/code/02-singletonBean.zip) |
+| [01-start](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/01-start.md) | [01-start-code](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/code/01-start.zip) |
+| [02-singletonBean](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/note/02-singletonBean.md) | [02-singletonBean-code](https://github.com/eastarpen/ssm-study/blob/master/src/spring/demo-05-small-spring/code/02-singletonBean.zip) |
 
 ### log
 
