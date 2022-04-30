@@ -47,11 +47,11 @@ src
 
 * 继承/实现 关系
 
-  ![UML-01](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-01.png)
+  ![UML-01](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-02.png)
 
 * 调用关系
 
-  ![UML-02](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-02.png)
+  ![UML-02](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-05-small-spring/UML-01.png)
 
 **Key**
 
