@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"><html>
+<html>
+<head>
+    <title>[[${title}]]</title>
+
+    <!-- jquery -->
+    <script th:src="@{/resources/jquery/jquery-3.3.1.js}"></script>
+
+    <!-- bootstrap, bootstrap-table -->
+    <script th:src="@{/resources/bootstrap-5.1.3-dist/js/bootstrap.js}"></script>
+    <script th:src="@{/resources/bootstrap-5.1.3-dist/js/bootstrap.bundle.js}"></script>
+    <script th:src="@{/resources/bootstrap-table-1.20.0.dist/bootstrap-table.js}"></script>
+    <script th:src="@{/resources/bootstrap-table-1.20.0.dist/bootstrap-table-zh-CN.js}"></script>
+
+
+    <link th:href="@{/resources/bootstrap-5.1.3-dist/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/resources/bootstrap-table-1.20.0.dist/bootstrap-table.css}" rel="stylesheet" />
+
+    <!------ layer ---------->
+    <script th:src="@{/resources/layer/layer.js}"></script>
+
+    <!-- goods manager -->
+    <script th:src="@{/resources/js/updateAndAddGoods.js}"></script>
+
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="container px-3 px-lg-5">
+        <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow">
+            <h3 class="text-center text-info">商品管理 -- [[${title}]]</h3>
+            <div class="container">
+                <form>
+                    <div class="row mb-3" hidden="hidden">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsId" class="col-sm-1 col-form-label">id</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="goodsId" placeholder="输入商品id"
+                                   th:value="${null == goods? '': goods.getId()}"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsName" class="col-sm-1 col-form-label">商品名</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="goodsName" required="required" placeholder="输入商品名"
+                                   th:value="${null == goods? '': goods.getName()}"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsType" class="col-sm-1 col-form-label">类别</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="goodsType" required="required" placeholder="输入商品类别"
+                                   th:value="${null == goods? '': goods.getType()}"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsPrice" class="col-sm-1 col-form-label">价格</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="goodsPrice" required="required"  placeholder="输入商品价格"
+                            th:value="${null == goods? '': goods.getPrice()}"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsOrigin" class="col-sm-1 col-form-label">产地</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="goodsOrigin" required="required" placeholder="输入商品产地"
+                            th:value="${null == goods? '': goods.getOrigin()}"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div>
+                        <label for="goodsDate" class="col-sm-1 col-form-label">生产日期</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="goodsDate" required="required" placeholder="商品日期: yyyy-MM-dd"
+                                   th:value="${null == goods? '': #dates.format(goods.getProductionDate(), 'yyyy-MM-dd')}"
+                            >
+                        </div>
+                    </div>
+                    <span id="submit" th:onclick="upload([[${null == goods?'add':'update'}]], [[${#request.contextPath}]])"
+                          class="btn btn-primary offset-5">[[${title}]]</span>
+                </form>
+            </div>
+        </article>
+    </div>
+</div>
+</body>
+</html>
