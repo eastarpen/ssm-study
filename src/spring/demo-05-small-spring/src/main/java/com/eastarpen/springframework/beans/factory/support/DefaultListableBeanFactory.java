@@ -24,6 +24,6 @@ public class DefaultListableBeanFactory extends AbstractAutowiredCapableBeanFact
         if(beanDefinition == null) {
             throw new BeansException("No bean named '" + beanName + "' is defined");
         }
-        return  beanDefinition;
+        return beanDefinition;
     }
 }

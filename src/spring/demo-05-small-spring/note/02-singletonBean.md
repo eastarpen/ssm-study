@@ -72,15 +72,39 @@ src
 
 ### 类设计思路
 
-TODO
+1. Registry -- bean 的注册与实例化
+   
+   为了减少资源占用, 添加到容器中的 Bean 不应该直接是实例化的对象, 于是另起一个容器存储 Bean 的注册信息(称为注册表), 注册表存放 Bean 的 class
+   信息, 当 Bean 需要被实例化的时候通过class信息利用反射机制完成类实例化
+   
+   * `class BeanDefinition` 就是注册表中的存储单元, 每一个 BeanDefinition 则对应一个类 
 
-**目标**
+   * `interface SingletonBeanRegistry` 定义了 `getSingleton` 方法, 改方法在 `getBean` 方法中被调用
 
-设计一个容器, 方便存取(管理) java 对象
+   * `class defalutSingletonBeanRegistry`  实现 `interface SingletonbeanRegistry` 
+    
+     * 实例化容器 `singletonObjects` 用以存储 单例 bean 对象
+     
+     * 实现了 `getSingleton` 方法, `getSingleton` 即获取 bean 实例, 在 `getBean` 方法中被调用
+       
+     * 定义实现 `addSingleton` 方法, `addSingleton` 即添加 `bean` 实例, 在 `addBean` 方法中被调用
+     
+   注册表 `beanDefinitionMap` 在 `DefaultListableBeanFactory` 中创建
 
-**分析**
+   TODO `addSingleton, getSingleton` 方法何时调用
 
-1. java 实例化对象需要存放
+2. Factory -- bean 的获取与创建接口 
+
+   * `interface BeanFactory` 定义 `getBean`方法用以获取 bean 实例
+
+   * `abstract class AbstractBeanFactory` 实现 `geetBean` 方法 并定义 `createBean, getBeanDefinition` 方法
+
+     * `createBean` 方法用以实例化 bean
+     * `getBeanDefinition` 获取 bean class 信息以实例化 bean
+
+   * `abstract class DefaultListableBeanFactory` 实现 `createBean` 方法
+    
+   * `class DefaultListableBeanFactory` 实现 `getBeanDefinition`方法
 
 ### `@SuppressWarnings({"rawtypes})`
 
