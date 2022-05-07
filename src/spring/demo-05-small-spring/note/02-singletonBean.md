@@ -77,9 +77,13 @@ src
    为了减少资源占用, 添加到容器中的 Bean 不应该直接是实例化的对象, 于是另起一个容器存储 Bean 的注册信息(称为注册表), 注册表存放 Bean 的 class
    信息, 当 Bean 需要被实例化的时候通过class信息利用反射机制完成类实例化
    
+   * `interface BeanDefinitionRegistry` 定义 `registerBeanDefinition` 方法
+    
+     该接口由 `DefaultListableBeanFactory` 实现, 完成 bean 的注册
+   
    * `class BeanDefinition` 就是注册表中的存储单元, 每一个 BeanDefinition 则对应一个类 
 
-   * `interface SingletonBeanRegistry` 定义了 `getSingleton` 方法, 改方法在 `getBean` 方法中被调用
+   * `interface SingletonBeanRegistry` 定义了 `getSingleton` 方法, 该方法在 `getBean` 方法中被调用
 
    * `class defalutSingletonBeanRegistry`  实现 `interface SingletonbeanRegistry` 
     
@@ -90,8 +94,6 @@ src
      * 定义实现 `addSingleton` 方法, `addSingleton` 即添加 `bean` 实例, 在 `addBean` 方法中被调用
      
    注册表 `beanDefinitionMap` 在 `DefaultListableBeanFactory` 中创建
-
-   TODO `addSingleton, getSingleton` 方法何时调用
 
 2. Factory -- bean 的获取与创建接口 
 
@@ -129,3 +131,5 @@ List、Set、Map是Java中的原始数据类型，Java 5出现泛型，现已不
 * 2022-04-21 完成 [《Spring 手撸专栏》第 3 章：初显身手，运用设计模式，实现 Bean 的定义、注册、获取](https://mp.weixin.qq.com/s/CgvQzm8B-CvQvXdxONC-lA) 的复现
 * 2022-04-22 完成 `02-singletonBean.md` 的编写, uml图绘制 和代码注释 
 * 2022-04-23 优化注解
+* 2022-05-05 完成类设计思路 
+* 2022-05-05 优化类设计思路 
