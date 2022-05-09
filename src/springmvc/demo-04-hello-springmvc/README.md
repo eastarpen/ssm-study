@@ -13,7 +13,7 @@
 * MVC 是将业务逻辑, 数据, 显示分离的方法来组织代码
 * MVC 的主要作用是降低了视图与业务逻辑间的耦合
  
-![spring-web-model-view-controller.png](https://raw.githubusercontent.com/eastarpen/springboot-study/master/img/spring-web-model-view-controller.png)
+![spring-web-model-view-controller.png](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-04/spring-web-model-view-controller.png)
 
 在 SpringMVC 中 DispatcherServlet 类 担任 前端控制器(front controller)角色
 
@@ -53,13 +53,13 @@
 * SpringMVC的Web框架围绕 DispatcherServlet **调度Servlet** 设计
 * DispatcherServlet 继承自 HttpServlet, 即 DispatcherServlet 是一个 Servlet
 
-  ![DispatcherServlet UML](https://raw.githubusercontent.com/eastarpen/springboot-study/master/img/dispatcherServlet_UML.png)
+  ![DispatcherServlet UML](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-04/dispatcherServlet_UML.png)
 
 ### SpringMVC 执行流程
 
 **引用自 [SpringMVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial) 的流程分析**
 
-![flow of spring web mvc](https://raw.githubusercontent.com/eastarpen/springboot-study/master/img/flow-of-spring-web-mvc.png)
+![flow of spring web mvc](https://raw.githubusercontent.com/eastarpen/ssm-study/master/img/demo-04/flow-of-spring-web-mvc.png)
 
 > - As displayed in the figure, all the incoming request is intercepted by the DispatcherServlet that works as the front controller.
 > - The DispatcherServlet gets an entry of handler mapping from the XML file and forwards the request to the controller.
